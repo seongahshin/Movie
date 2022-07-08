@@ -16,11 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EJW-6D-w0c">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJW-6D-w0c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="QeP-qE-TTE"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="owq-OJ-kwR" appends="YES" id="7mh-Vn-N0I"/>
                                 </connections>
@@ -167,9 +169,14 @@
                         <viewLayoutGuide key="safeArea" id="Kn9-hF-GOj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EJW-6D-w0c" secondAttribute="bottom" id="8Cn-Ax-dM1"/>
                             <constraint firstItem="eaG-8D-PGt" firstAttribute="top" secondItem="Kn9-hF-GOj" secondAttribute="top" constant="50" id="Be2-ym-wNy"/>
                             <constraint firstItem="eaG-8D-PGt" firstAttribute="centerX" secondItem="W81-t0-dvl" secondAttribute="centerX" id="EVR-cp-hYG"/>
                             <constraint firstItem="hgs-d3-Sx5" firstAttribute="centerX" secondItem="W81-t0-dvl" secondAttribute="centerX" id="TtN-D5-0fa"/>
+                            <constraint firstItem="EJW-6D-w0c" firstAttribute="top" secondItem="W81-t0-dvl" secondAttribute="top" id="aUV-CD-8el"/>
+                            <constraint firstAttribute="bottom" secondItem="EJW-6D-w0c" secondAttribute="bottom" id="cMk-Jm-z2D"/>
+                            <constraint firstItem="EJW-6D-w0c" firstAttribute="trailing" secondItem="Kn9-hF-GOj" secondAttribute="trailing" id="cNo-1D-Xhx"/>
+                            <constraint firstItem="EJW-6D-w0c" firstAttribute="leading" secondItem="Kn9-hF-GOj" secondAttribute="leading" id="hUc-gV-CID"/>
                             <constraint firstItem="hgs-d3-Sx5" firstAttribute="top" secondItem="eaG-8D-PGt" secondAttribute="bottom" constant="50" id="wVZ-EW-Mw3"/>
                         </constraints>
                     </view>
@@ -207,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="광해" translatesAutoresizingMaskIntoConstraints="NO" id="jIq-Gh-F2K">
-                                <rect key="frame" x="-35" y="-293" width="449" height="1255"/>
+                                <rect key="frame" x="-35" y="-353" width="449" height="1315"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gP9-Iu-JCX">
@@ -402,10 +409,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DMt-gN-DyZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="30" id="3wQ-wU-Yoo"/>
+                            <constraint firstItem="DMt-gN-DyZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FB5-vo-Nnl"/>
                             <constraint firstItem="ePi-87-7kU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="KZj-8F-127"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5dI-4u-UTv" secondAttribute="trailing" id="S4x-1u-dzz"/>
                             <constraint firstItem="DMt-gN-DyZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mv8-wz-bG3"/>
                             <constraint firstItem="ePi-87-7kU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nM3-yZ-PcM"/>
+                            <constraint firstItem="DMt-gN-DyZ" firstAttribute="top" secondItem="5dI-4u-UTv" secondAttribute="bottom" id="uZW-8M-Xje"/>
                             <constraint firstItem="DMt-gN-DyZ" firstAttribute="top" secondItem="5dI-4u-UTv" secondAttribute="bottom" id="vct-3C-Deb"/>
                         </constraints>
                     </view>
