@@ -316,9 +316,12 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR7-Bj-Vb4">
-                                        <rect key="frame" x="305" y="62" width="84" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR7-Bj-Vb4">
+                                        <rect key="frame" x="304" y="63" width="84" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="Nyu-mf-sb9"/>
+                                            <constraint firstAttribute="width" constant="84" id="vTG-BX-R4R"/>
+                                        </constraints>
                                         <color key="tintColor" systemColor="systemBackgroundColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="정보">
@@ -332,12 +335,19 @@
                                             <constraint firstAttribute="width" constant="34" id="aDi-7S-GZZ"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-rc-DlP">
-                                        <rect key="frame" x="331" y="19" width="32" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-rc-DlP">
+                                        <rect key="frame" x="333" y="25" width="32" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="OWr-wF-JlV"/>
+                                            <constraint firstAttribute="height" constant="40" id="PAV-TF-Yak"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-EC-jRS">
-                                        <rect key="frame" x="153" y="39" width="134" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-EC-jRS">
+                                        <rect key="frame" x="153" y="38.5" width="134" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="NqT-aS-PE0"/>
+                                            <constraint firstAttribute="width" constant="134" id="rFg-0l-D5Q"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="">
                                             <backgroundConfiguration key="background" image="play_normal"/>
@@ -350,11 +360,16 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AYL-Go-blh" firstAttribute="top" secondItem="hyy-xF-Svv" secondAttribute="bottom" constant="5" id="4hA-0p-eZT"/>
+                                    <constraint firstAttribute="trailing" secondItem="TR7-Bj-Vb4" secondAttribute="trailing" constant="12" id="6Ts-fM-G9G"/>
+                                    <constraint firstAttribute="bottom" secondItem="TR7-Bj-Vb4" secondAttribute="bottom" constant="23" id="83D-l0-hTp"/>
                                     <constraint firstAttribute="height" constant="112" id="9gf-4T-v3C"/>
+                                    <constraint firstAttribute="trailing" secondItem="gvd-rc-DlP" secondAttribute="trailing" constant="35" id="GVs-vx-tx0"/>
                                     <constraint firstItem="bCC-EC-jRS" firstAttribute="centerY" secondItem="5dI-4u-UTv" secondAttribute="centerY" id="Wby-xJ-o9U"/>
                                     <constraint firstItem="AYL-Go-blh" firstAttribute="leading" secondItem="5dI-4u-UTv" secondAttribute="leadingMargin" constant="8" id="b1K-aU-bfV"/>
                                     <constraint firstAttribute="width" constant="400" id="k6q-KS-26b"/>
+                                    <constraint firstItem="bCC-EC-jRS" firstAttribute="leading" secondItem="AYL-Go-blh" secondAttribute="trailing" constant="17" id="pO5-Ui-A7h"/>
                                     <constraint firstItem="hyy-xF-Svv" firstAttribute="leading" secondItem="5dI-4u-UTv" secondAttribute="leading" constant="55" id="udh-mW-qgO"/>
+                                    <constraint firstItem="gvd-rc-DlP" firstAttribute="top" secondItem="5dI-4u-UTv" secondAttribute="top" constant="25" id="xQf-6M-P3o"/>
                                     <constraint firstItem="hyy-xF-Svv" firstAttribute="top" secondItem="5dI-4u-UTv" secondAttribute="top" constant="25" id="zxf-c6-DbP"/>
                                 </constraints>
                             </view>
